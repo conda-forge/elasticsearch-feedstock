@@ -1,16 +1,21 @@
-{% set version = "2.3.0" %}
+{%set name = "elasticsearch" %}
+{%set version = "2.3.0" %}
+{%set compress_type = "tar.gz" %}
+{%set hash_type = "sha256" %}
+{%set hash_val = "be3080a2bf32dff0a9f9fcc1c087515a25a357645673a976d25ef77166134d81" %}
+{%set build_num = "1" %}
 
 package:
-  name: elasticsearch
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: elasticsearch-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/e/elasticsearch/elasticsearch-{{ version }}.tar.gz
-  sha256: be3080a2bf32dff0a9f9fcc1c087515a25a357645673a976d25ef77166134d81
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -32,7 +37,11 @@ test:
 about:
   home: https://github.com/elastic/elasticsearch-py
   license: Apache 2.0
+  license_file: LICENSE
+  license_family: Apache
   summary: 'Python client for Elasticsearch'
+  doc_url: https://elasticsearch-py.readthedocs.io
+  dev_url: https://github.com/elastic/elasticsearch-py
 
 extra:
   recipe-maintainers:
