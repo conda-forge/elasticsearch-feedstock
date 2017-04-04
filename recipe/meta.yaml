@@ -1,8 +1,8 @@
 {%set name = "elasticsearch" %}
-{%set version = "5.2.0" %}
+{%set version = "5.3.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "45d9f8fbe0878a1b7493afeb20f4f6677a43982776ed1a77d9373e9c5b9de966" %}
+{%set hash_val = "cb7f1346ebf7fb3fac1efcd8454d2d124d29cc55a009ed5683fe4c6ecad12925" %}
 {%set build_num = "0" %}
 
 package:
