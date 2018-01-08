@@ -1,22 +1,23 @@
-{%set name = "elasticsearch" %}
-{%set version = "6.1.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "8d91a3fce12123a187b673f18c23bcffa6e7b49ba057555d59eeeded0ba15dce" %}
-{%set build_num = "0" %}
+{% set name = "elasticsearch" %}
+{% set version = "6.1.1" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "8d91a3fce12123a187b673f18c23bcffa6e7b49ba057555d59eeeded0ba15dce" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
 
 requirements:
   build:
@@ -25,7 +26,7 @@ requirements:
 
   run:
     - python
-    - urllib3 >=1.8,<2.0
+    - urllib3 >=1.21.1,<1.23
 
 test:
   imports:
