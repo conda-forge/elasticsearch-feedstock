@@ -1,9 +1,9 @@
 {% set name = "elasticsearch" %}
-{% set version = "6.1.1" %}
+{% set version = "2.4.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "8d91a3fce12123a187b673f18c23bcffa6e7b49ba057555d59eeeded0ba15dce" %}
-{% set build = 0 %}
+{% set hash_val = "e71dd7058b940f409068d8d5df2354dc4367436947a28e0e03d35d5c0508c310" %}
+{% set build = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
 
   run:
     - python
-    - urllib3 >=1.21.1,<1.23
+    - urllib3 >=1.8,<2.0
 
 test:
   imports:
