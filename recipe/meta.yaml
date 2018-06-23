@@ -10,22 +10,23 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
-    - urllib3 >=1.21.1,<1.23
+    - urllib3 >=1.21.1
+    - requests >=2.4.0,<3.0.0
 
 test:
   imports:
