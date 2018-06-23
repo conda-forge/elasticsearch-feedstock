@@ -14,12 +14,15 @@ Summary: Python client for Elasticsearch
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/elasticsearch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/elasticsearch-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/elasticsearch-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/elasticsearch-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/elasticsearch/badges/version.svg)](https://anaconda.org/conda-forge/elasticsearch)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/elasticsearch/badges/downloads.svg)](https://anaconda.org/conda-forge/elasticsearch)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-elasticsearch-green.svg)](https://anaconda.org/conda-forge/elasticsearch) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/elasticsearch.svg)](https://anaconda.org/conda-forge/elasticsearch) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/elasticsearch.svg)](https://anaconda.org/conda-forge/elasticsearch) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/elasticsearch.svg)](https://anaconda.org/conda-forge/elasticsearch) |
 
 Installing elasticsearch
 ========================
