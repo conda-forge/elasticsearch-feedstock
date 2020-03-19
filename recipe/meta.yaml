@@ -1,8 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "7.5.1" %}
+{% set version = "7.6.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "2a0ca516378ae9b87ac840e7bb529ec508f3010360dd9feed605dff2a898aff5" %}
+{% set hash_val = "d228b2d37ac0865f7631335268172dbdaa426adec1da3ed006dddf05134f89c8" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +10,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   number: 0
@@ -40,7 +39,7 @@ about:
   license: Apache 2.0
   license_file: LICENSE
   license_family: Apache
-  summary: 'Python client for Elasticsearch'
+  summary: Python client for Elasticsearch
   doc_url: https://elasticsearch-py.readthedocs.io
   dev_url: https://github.com/elastic/elasticsearch-py
 
