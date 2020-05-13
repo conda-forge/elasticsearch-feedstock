@@ -3,7 +3,7 @@ About elasticsearch
 
 Home: https://github.com/elastic/elasticsearch-py
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@ahlaw](https://github.com/ahlaw/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@sethmlarson](https://github.com/sethmlarson/)
 
