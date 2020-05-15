@@ -26,6 +26,7 @@ requirements:
     - python
     - urllib3 >=1.21.1
     - requests >=2.4.0,<3.0.0
+    - certifi
 
 test:
   imports:
