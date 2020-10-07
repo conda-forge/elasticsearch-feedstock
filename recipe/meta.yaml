@@ -19,9 +19,10 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
+    - pip
 
   run:
     - python
