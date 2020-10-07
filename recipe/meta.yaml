@@ -1,9 +1,9 @@
-{%set name = "elasticsearch" %}
-{%set version = "5.5.3" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "ae91b089f2f2b5b3daa04297949e5f805ab12d187218cb587273f472656fd250" %}
-{%set build_num = "0" %}
+{% set name = "elasticsearch" %}
+{% set version = "5.5.3" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "ae91b089f2f2b5b3daa04297949e5f805ab12d187218cb587273f472656fd250" %}
+{% set build_num = "0" %}
 
 package:
   name: {{ name|lower }}
