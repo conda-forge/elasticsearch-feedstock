@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "7.9.1" %}
+{% set version = "7.10.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "5e08776fbb30c6e92408c7fa8c37d939210d291475ae2f364f0497975918b6fe" %}
+{% set hash_val = "9053ca99bc9db84f5d80e124a79a32dfa0f7079b2112b546a03241c0dbeda36d" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
 
   run:
     - python
-    - urllib3 >=1.21.1
+    - urllib3 >=1.21.1, <2
     - requests >=2.4.0,<3.0.0
     - certifi
 
