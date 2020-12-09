@@ -5,11 +5,13 @@ Home: https://github.com/elastic/elasticsearch-py
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/elasticsearch-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python client for Elasticsearch
 
+Development: https://github.com/elastic/elasticsearch-py
 
+Documentation: https://elasticsearch-py.readthedocs.io
 
 Current build status
 ====================
