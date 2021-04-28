@@ -19,14 +19,15 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
     - urllib3 >=1.21.1, <2
     - requests >=2.4.0,<3.0.0
     - certifi
+    - aiohttp >=3,<4
 
 test:
   imports:
