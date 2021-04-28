@@ -13,7 +13,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -46,6 +46,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - pmlandwehr
     - ahlaw
     - sethmlarson
