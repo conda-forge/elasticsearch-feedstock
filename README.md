@@ -120,6 +120,5 @@ Feedstock Maintainers
 =====================
 
 * [@ahlaw](https://github.com/ahlaw/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@sethmlarson](https://github.com/sethmlarson/)
 
