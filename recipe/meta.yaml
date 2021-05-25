@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "7.12.1" %}
+{% set version = "7.13.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "df35d8c638f946f098a74681b18611bdf27ba469fa2063e3dfc8bdc290b11419" %}
+{% set hash_val = "da3de0451c61e9357cec2f8bf32d8aea65974e5717b5deef53718392cf4c2985" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
