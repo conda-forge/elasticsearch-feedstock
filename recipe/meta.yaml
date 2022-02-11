@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "7.17.0" %}
+{% set version = "8.0.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "406013783cc36af28ea36cd58cf184cd646530e47eea41336b386322fb878b59" %}
+{% set hash_val = "29d80795daf9244bf3b9e3691720cb9d96cc8de42fab82c7d26973323526f785" %}
 
 package:
   name: {{ name|lower }}
@@ -21,19 +21,15 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - elastic-transport >=8,<9
 
   run:
     - python >=3.6
-    - urllib3 >=1.21.1, <2
-    - requests >=2.4.0,<3.0.0
-    - certifi
-    - aiohttp >=3,<4
+    - elastic-transport >=8,<9
 
 test:
   imports:
     - elasticsearch
-    - elasticsearch.client
-    - elasticsearch.connection
     - elasticsearch.helpers
 
 about:
