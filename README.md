@@ -148,5 +148,6 @@ Feedstock Maintainers
 =====================
 
 * [@ahlaw](https://github.com/ahlaw/)
+* [@miriam-eid](https://github.com/miriam-eid/)
 * [@sethmlarson](https://github.com/sethmlarson/)
 
