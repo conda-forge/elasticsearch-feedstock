@@ -149,5 +149,5 @@ Feedstock Maintainers
 
 * [@ahlaw](https://github.com/ahlaw/)
 * [@ezimuel](https://github.com/ezimuel/)
-* [@sethmlarson](https://github.com/sethmlarson/)
+* [@joshmock](https://github.com/joshmock/)
 
