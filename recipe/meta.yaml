@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "8.13.1" %}
+{% set version = "8.13.2" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "1594d2d1293672db62525bc4688d86cdaf118db0f901808db28dc90ad19b81e1" %}
+{% set hash_val = "d51c93431a459b2b7c6c919b6e92a2adc8ac712758de9aeeb16cd4997fc148ad" %}
 
 package:
   name: {{ name|lower }}
