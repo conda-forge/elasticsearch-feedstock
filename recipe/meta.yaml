@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - pip
     - elastic-transport >=8.13,<9
