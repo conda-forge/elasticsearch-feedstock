@@ -25,7 +25,7 @@ requirements:
     - elastic-transport >=8.13,<9
 
   run:
-    - python >=3.7
+    - python >=3.8
     - elastic-transport >=8.13,<9
 
 test:
