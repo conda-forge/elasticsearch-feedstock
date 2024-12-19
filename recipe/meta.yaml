@@ -13,22 +13,24 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python 3.8
+    - python {{ python_min }}
     - hatchling
     - pip
     - elastic-transport >=8.13,<9
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - elastic-transport >=8.13,<9
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - elasticsearch
     - elasticsearch.helpers
