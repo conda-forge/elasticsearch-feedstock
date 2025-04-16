@@ -22,11 +22,15 @@ requirements:
     - python {{ python_min }}
     - hatchling
     - pip
-    - elastic-transport >=8.13,<9
+    - elastic-transport >=8.15.1,<9
+    - python-dateutil
+    - typing-extensions
 
   run:
     - python >={{ python_min }}
-    - elastic-transport >=8.13,<9
+    - elastic-transport >=8.15.1,<9
+    - python-dateutil
+    - typing-extensions
 
 test:
   requires:
