@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - elastic-transport >=8.15.1,<9
+    - elastic-transport >=9.1.0,<10
     - python-dateutil
     - typing-extensions
 
