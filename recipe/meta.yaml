@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "9.1.1" %}
+{% set version = "9.2.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "be20acda2a97591a9a6cf4981fc398ee6fca3291cf9e7a9e52b6a9f41a46d393" %}
+{% set hash_val = "99656baa34b10130402b6c38429feddf7aee1c3247566e8f95f0d0267fe9f9ab" %}
 
 package:
   name: {{ name|lower }}
@@ -22,15 +22,19 @@ requirements:
     - python {{ python_min }}
     - hatchling
     - pip
-    - elastic-transport >=8.15.1,<9
+    - elastic-transport >=9.2.0,<10
     - python-dateutil
     - typing-extensions
+    - sniffio
+    - anyio
 
   run:
     - python >={{ python_min }}
-    - elastic-transport >=9.1.0,<10
+    - elastic-transport >=9.2.0,<10
     - python-dateutil
     - typing-extensions
+    - sniffio
+    - anyio
 
 test:
   requires:
