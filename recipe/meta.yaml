@@ -1,7 +1,7 @@
 {% set name = "elasticsearch" %}
-{% set version = "9.5.0" %}
+{% set version = "9.5.1" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "c37576ba04d04200a05012db99bc99024000ae15b9ebdd683966aa8a0e6cd1c4" %}
+{% set hash_val = "98210cd96c256dd9936f58e1c762aba94da7db7d38d058bb0fbaf7e4b9567146" %}
 
 package:
   name: {{ name|lower }}
@@ -9,11 +9,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
